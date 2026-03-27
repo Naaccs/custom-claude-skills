@@ -34,7 +34,7 @@ Custom slash commands for project workflows.
 | Command | Model | Description |
 |---------|-------|-------------|
 | [tdd-plan.md](commands/tdd-plan.md) | opus | Create implementation plans with explicit TDD phases, research-driven context gathering, and agent orchestration |
-| [test-walkthrough.md](commands/test-walkthrough.md) | opus | Browser-based walkthrough to verify features or debug issues using agent-browser in headed mode |
+
 
 ## Installation
 
@@ -77,7 +77,7 @@ mkdir -p .claude/commands
 curl -o .claude/commands/tdd-plan.md https://raw.githubusercontent.com/Naaccs/custom-claude-skills/main/commands/tdd-plan.md
 
 # All commands
-for f in tdd-plan test-walkthrough; do
+for f in tdd-plan; do
   curl -o .claude/commands/$f.md https://raw.githubusercontent.com/Naaccs/custom-claude-skills/main/commands/$f.md
 done
 ```
